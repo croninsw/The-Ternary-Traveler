@@ -32,4 +32,5 @@ const API = {
         method: "DELETE"
     })
 }
+}
 
