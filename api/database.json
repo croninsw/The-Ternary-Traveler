@@ -7,27 +7,53 @@
     },
     {
       "id": 2,
+      "name": "Cuba",
+      "visa_required": false
+    },
+    {
+      "id": 3,
+      "name": "Germany",
+      "visa_required": false
+    },
+    {
+      "id": 4,
+      "name": "Greece",
+      "visa_required": false
+    },
+    {
+      "id": 5,
       "name": "Switzerland",
       "visa_required": true
     },
     {
-      "id": 3,
+      "id": 6,
       "name": "France",
+      "visa_required": false
+    },
+    {
+      "id": 7,
+      "name": "Alaska",
       "visa_required": false
     }
   ],
   "interests": [
     {
-      "placeId": "1",
-      "name": "matt",
-      "description": "matt",
-      "id": 3
+      "placeId": "3",
+      "name": "Carnival",
+      "description": "Festival worth coming back for.",
+      "id": 5
     },
     {
-      "placeId": "1",
-      "name": "dominic",
-      "description": "dominic",
-      "id": 4
+      "placeId": "2",
+      "name": "Winter Market",
+      "description": "All of the lights",
+      "id": 6
+    },
+    {
+      "placeId": "2",
+      "name": "La Frabrica",
+      "description": "Cool art club open to the public in a sort of dancy-drunk crowd. Very hip",
+      "id": 7
     }
   ]
 }
