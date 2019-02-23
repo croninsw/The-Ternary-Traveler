@@ -1,19 +1,50 @@
-const interestForm = ( ) => {
-    return `
-        <section>
-            <input type="hidden" value="${interestId}"><br>
-            <fieldset>
-                <label for="interest__name">Name of Interest: </label>
-                <input type="text" name="interest__name" placeholder="name"><br>
-            </fieldset>
-            <fieldset>
-                <label for="interest__description">Description of Interest: </label>
-                <input type="text" name="interest__description" placeholder="description"><br>
-            </fieldset>
-            <fieldset>
-                <label for="interest__location">Location of Interest: </label>
-                <select id="location__selection"></select>
-            </fieldset>
-        </section>
+import API from "./dataManager"
+
+const displayInterestForm = () => {
+
+    const interestForm = document.querySelector("#interests")
+
+    const interestFormHTML = `
+    <article>
+    <fieldset id="interestForm">
+    <label for="name">Name of Interest: </label>
+    <input type="text" id="name" name="name"><br>
+    <label for="description">Description of Interest: </label>
+    <input type="text" id="description" name="desciption"><br>
+    <label for="placesDropDown">Place: </label>
+    <select id="placesDropDown"></select>
+    </fieldset>
+    <button id="submitInterest">Submit Interest</button>
+    </article>
     `
+
+
+
+    interestForm.innerHTML = interestFormHTML
+
+
+    const createPlacesDropdown = place => `
+        <option value="${place.id}">${place.name}</option>
+    `
+    let allPlaces = []
+
+    API.getPlaces()
+        .then(parsedJson => {
+            allPlaces = parsedJson
+            allPlaces.forEach(
+                (place) => {
+                    const html = createPlacesDropdown(place)
+                    document.querySelector("#placesDropDown").innerHTML += html
+
+                }
+            )
+            return allPlaces
+        })
+
 }
+
+
+
+
+
+export default displayInterestForm
