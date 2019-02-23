@@ -1,17 +1,17 @@
-import displayInterestForm from "./interestForm"
+import displayForm from "./interestForm"
 import loadInterests from "./populateInterest";
-// import createPlacesDropdown from "./placesDropDown";
 import deleteInterest from "./deleteInterests";
 import editInterests from "./editInterests"
+import submitAndRefresh from "./submitAndRefresh"
 
 
 
 
-displayInterestForm()
+displayForm()
 loadInterests()
-// createPlacesDropdown()
 deleteInterest()
 editInterests()
+submitAndRefresh()
 
 
 
