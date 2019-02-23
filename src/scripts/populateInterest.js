@@ -1,11 +1,8 @@
 import API from "./dataManager"
-
 import interestObject from "./captureInterestValues"
 
 
 const displayInterests = () => {
-
-
     API.getInterest()
         .then(
             (oldInterest) => {
@@ -18,7 +15,6 @@ const displayInterests = () => {
                 })
             }
         )
-
 }
 
 export default displayInterests

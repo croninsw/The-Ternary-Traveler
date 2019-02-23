@@ -8,7 +8,6 @@ const interestObject = (interest) => {
     </section>
     `
 }
-return newInterest
 
 
 export default interestObject

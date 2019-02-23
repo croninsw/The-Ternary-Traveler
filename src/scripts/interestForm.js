@@ -2,7 +2,7 @@ import API from "./dataManager"
 
 const displayInterestForm = () => {
 
-    const interestForm = document.querySelector("#interests")
+    const interestForm = document.querySelector("#interestsForm")
 
     const interestFormHTML = `
     <article>
@@ -18,16 +18,10 @@ const displayInterestForm = () => {
     </article>
     `
 
-
-
     interestForm.innerHTML = interestFormHTML
 
-
-    const createPlacesDropdown = place => `
-        <option value="${place.id}">${place.name}</option>
-    `
+    const createPlacesDropdown = place => `<option value="${place.id}">${place.name}</option>`
     let allPlaces = []
-
     API.getPlaces()
         .then(parsedJson => {
             allPlaces = parsedJson
