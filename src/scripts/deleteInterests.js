@@ -1,3 +1,5 @@
+import API from "./dataManager"
+
 const deleteInterest = () => {
     document.querySelector("#populateInterests").addEventListener("click", () => {
         if (event.target.id.startsWith("delete")) {

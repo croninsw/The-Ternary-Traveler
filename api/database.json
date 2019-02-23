@@ -16,5 +16,12 @@
         "visa_required": false
       }
     ],
-    "interests": []
+    "interests": [
+        {
+            "id": 1,
+            "placeId": 1,
+            "name": "Tennis Court",
+            "description": "All the balls"
+        }
+    ]
   }
