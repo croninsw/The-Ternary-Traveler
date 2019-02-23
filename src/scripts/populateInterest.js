@@ -2,7 +2,7 @@ import API from "./dataManager"
 import interestObject from "./captureInterestValues"
 
 
-const displayInterests = () => {
+const loadInterests = () => {
     API.getInterest()
         .then(
             (oldInterest) => {
@@ -11,13 +11,13 @@ const displayInterests = () => {
 
                 oldInterest.forEach((currentObject) => {
                     let interestHTML = interestObject(currentObject)
-                    interestListEl.innerHTML += interestHTML
+                    outputEl.innerHTML += interestHTML
                 })
             }
         )
 }
 
-export default displayInterests
+export default loadInterests
 
 
 
