@@ -1,8 +1,9 @@
 const interestObject = (interest) => {
-    return `
+  return `
     <section id="interestObject">
         <h2>${interest.name}</h2>
         <div>${interest.description}</div>
+        <div>${interest.placeId.name}</div>
         <button id="delete--${interest.id}">Delete Interest</button>
     </section>
     `

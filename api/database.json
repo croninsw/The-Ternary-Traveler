@@ -54,6 +54,12 @@
       "name": "La Frabrica",
       "description": "Cool art club open to the public in a sort of dancy-drunk crowd. Very hip",
       "id": 7
+    },
+    {
+      "placeId": "7",
+      "name": "Big bears",
+      "description": "Like, woah",
+      "id": 8
     }
   ]
 }
