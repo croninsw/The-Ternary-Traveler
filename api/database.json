@@ -1,27 +1,33 @@
 {
-    "places": [
-      {
-        "id": 1,
-        "name": "Italy",
-        "visa_required": false
-      },
-      {
-        "id": 2,
-        "name": "Switzerland",
-        "visa_required": true
-      },
-      {
-        "id": 3,
-        "name": "France",
-        "visa_required": false
-      }
-    ],
-    "interests": [
-        {
-            "id": 1,
-            "placeId": 1,
-            "name": "Tennis Court",
-            "description": "All the balls"
-        }
-    ]
-  }
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
+  "interests": [
+    {
+      "placeId": "1",
+      "name": "matt",
+      "description": "matt",
+      "id": 3
+    },
+    {
+      "placeId": "1",
+      "name": "dominic",
+      "description": "dominic",
+      "id": 4
+    }
+  ]
+}

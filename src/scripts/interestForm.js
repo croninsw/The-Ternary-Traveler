@@ -1,6 +1,6 @@
 import API from "./dataManager"
 
-const displayInterestForm = () => {
+const displayForm = () => {
 
     const interestForm = document.querySelector("#interestsForm")
 
@@ -41,4 +41,4 @@ const displayInterestForm = () => {
 
 
 
-export default displayInterestForm
+export default displayForm
